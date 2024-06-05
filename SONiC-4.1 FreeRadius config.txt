@@ -1,0 +1,112 @@
+!
+radius-server timeout 5
+radius-server auth-type chap
+radius-server host 172.21.50.100 auth-port 1812 key secret1  source-interface Vlan50
+!
+mab request format attribute 1 groupsize 1 separator : uppercase
+dot1x system-auth-control
+!
+!
+interface Vlan50
+ description Server-Vlan
+ ip address 172.21.50.1/24
+!
+interface Vlan100
+ description Client-Vlan
+ ip address 172.21.100.1/24
+!
+interface Vlan110
+ description Printer-MAB
+ ip address 172.21.110.1/24
+!
+  interface Vlan500
+   description authorize_fail
+  !
+  interface Vlan501
+   description no_response
+  !
+  interface Loopback 0
+   !
+  interface Loopback 0
+ ip address 172.21.1.1/32
+!
+
+!
+interface Eth1/1
+ description Server-Host
+ mtu 9100
+ speed 25000
+ unreliable-los auto
+ no shutdown
+ switchport access Vlan 50
+!
+!
+interface Eth1/2
+ description Server-Host
+ mtu 9100
+ speed 25000
+ unreliable-los auto
+ no shutdown
+ switchport access Vlan 50
+!
+interface Eth1/3
+ mtu 9100
+ speed 25000
+ unreliable-los auto
+ no shutdown
+ switchport access Vlan 110
+ authentication host-mode multi-auth
+ authentication port-control auto
+ authentication order mab dot1x
+ authentication priority mab dot1x
+ authentication event fail action authorize vlan 500
+ authentication event no-response action authorize vlan 501
+ dot1x pae authenticator
+ mab auth-type chap
+!
+interface Eth1/4
+ mtu 9100
+ speed 25000
+ unreliable-los auto
+ shutdown
+!
+!
+interface Eth1/5
+ description Client-PC
+ mtu 9100
+ speed 25000
+ unreliable-los auto
+ no shutdown
+ switchport access Vlan 100
+ authentication host-mode multi-auth
+ authentication port-control auto
+ dot1x pae authenticator
+!
+interface Eth1/6
+ mtu 9100
+ speed 25000
+ unreliable-los auto
+ shutdown
+!
+interface Eth1/7
+ mtu 9100
+ speed 25000
+ unreliable-los auto
+ shutdown
+!
+interface Eth1/8
+ description Printer-MAB
+ mtu 9100
+ speed 25000
+ unreliable-los auto
+ no shutdown
+ switchport access Vlan 110
+ authentication host-mode multi-auth
+ authentication port-control auto
+ authentication event fail action authorize vlan 500
+ authentication event no-response action authorize vlan 501
+ dot1x pae authenticator
+ mab auth-type chap
+!
+
+

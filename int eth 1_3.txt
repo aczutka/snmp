@@ -1,0 +1,17 @@
+!
+interface Eth1/3
+description Printer-MAB
+dot1x pae authenticator
+authentication host-mode single-host
+authentication port-control auto
+authentication order mab dot1x
+authentication priority mab dot1x
+authentication event fail action authorize vlan 500
+authentication event no-response action authorize vlan 501
+authentication timer reauthenticate 30
+dot1x pae authenticator
+authentication periodic
+mab auth-type chap
+switchport access Vlan 110
+no shutdown
+!
