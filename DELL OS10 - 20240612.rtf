@@ -1,0 +1,394 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang6153{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red170\green64\blue64;\red56\green136\blue159;}
+\viewkind4\uc1\pard\f0\fs20      \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                 \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?              \cf4 (X server, SSH client and network tools)\cf0               \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? Your computer drives are accessible through the \cf5 /drives\cf0  path     \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? Your DISPLAY is set to \cf5 192.168.1.2:0.0    \cf0                        \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? When using \cf5 SSH\cf0 , your remote DISPLAY is automatically forwarded   \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? Each command status is specified by a special symbol (\cf3 v\cf0  or \cf6 x\cf0 )    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \cf6\f1\bullet  Important:\cf0\f0                                                        \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \cf7 This is MobaXterm Personal Edition. The Professional edition\cf0        \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \cf7 allows you to customize MobaXterm for your company: you can add\cf0     \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \cf7 your own logo, your parameters, your welcome message and generate\cf0   \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \cf7 either an MSI installation package or a portable executable.\cf0        \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \cf7 We can also modify MobaXterm or develop the plugins you need.\cf0       \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \cf4 For more information: \cf5\ul https://mobaxterm.mobatek.net/download.html\cf0\ulnone   \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Entering character mode\cf1\highlight2 
+\par \cf0\highlight0 Escape character is '^]'.\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10# terminal length 0\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10# show running-configuration\cf1\highlight2 
+\par \cf0\highlight0 ! Version 10.5.5.6\cf1\highlight2 
+\par \cf0\highlight0 ! Last configuration change at Jun  12 07:00:59 2024\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 ip vrf default\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 ip vrf blue\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 iscsi enable\cf1\highlight2 
+\par \cf0\highlight0 iscsi target port 860\cf1\highlight2 
+\par \cf0\highlight0 iscsi target port 3260\cf1\highlight2 
+\par \cf0\highlight0 interface breakout 1/1/25 map 100g-1x\cf1\highlight2 
+\par \cf0\highlight0 interface breakout 1/1/26 map 100g-1x\cf1\highlight2 
+\par \cf0\highlight0 hostname Dell-OS10\cf1\highlight2 
+\par \cf0\highlight0 system-user linuxadmin password ****\cf1\highlight2 
+\par \cf0\highlight0 ip multicast-routing\cf1\highlight2 
+\par \cf0\highlight0 username admin password **** role sysadmin priv-lvl 15\cf1\highlight2 
+\par \cf0\highlight0 aaa authentication login default local\cf1\highlight2 
+\par \cf0\highlight0 aaa authentication login console local\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 alias c "configure terminal"\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 class-map type application class-iscsi\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 class-map type qos MC-Rate_class_map\cf1\highlight2 
+\par \cf0\highlight0  match ip access-group name MC-Rate_Limit\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 policy-map type application policy-iscsi\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 policy-map type qos MC-Rate_policy\cf1\highlight2 
+\par \cf0\highlight0  !\cf1\highlight2 
+\par \cf0\highlight0  class MC-Rate_class_map\cf1\highlight2 
+\par \cf0\highlight0   police cir 10000 pir 20000\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface vlan1\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface vlan100\cf1\highlight2 
+\par \cf0\highlight0  description IPerf-Server\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  ip vrf forwarding blue\cf1\highlight2 
+\par \cf0\highlight0  ip address 172.21.100.1/24\cf1\highlight2 
+\par \cf0\highlight0  ip pim sparse-mode\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface vlan200\cf1\highlight2 
+\par \cf0\highlight0  description IPerf-Client\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  ip vrf forwarding blue\cf1\highlight2 
+\par \cf0\highlight0  ip address 172.21.200.1/24\cf1\highlight2 
+\par \cf0\highlight0  ip pim sparse-mode\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface loopback0\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  ip address 172.21.1.1/32\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface mgmt1/1/1\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  ip address dhcp\cf1\highlight2 
+\par \cf0\highlight0  ipv6 address autoconfig\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/1\cf1\highlight2 
+\par \cf0\highlight0  description IPerf-Server\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/2\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/3\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/4\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/5\cf1\highlight2 
+\par \cf0\highlight0  description IPerf-Client\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/6\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/7\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/8\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/9\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/10\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/11\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/12\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/13\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/14\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/15\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/16\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/17\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/18\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/19\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/20\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/21\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/22\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/23\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/24\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/25\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/26\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/27\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/28\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/29\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/30\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 ip access-list MC-Rate_Limit\cf1\highlight2 
+\par \cf0\highlight0  seq 10 permit ip 239.1.1.10/32 any\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 snmp-server community public ro\cf1\highlight2 
+\par \cf0\highlight0 snmp-server community private rw\cf1\highlight2 
+\par \cf0\highlight0 snmp-server contact Dell-Lab\cf1\highlight2 
+\par \cf0\highlight0 snmp-server engineID local 172.21.1.1\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 telemetry\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10# show ip igmp snooping\cf1\highlight2 
+\par \cf0\highlight0   groups     IGMP snooping group membership information\cf1\highlight2 
+\par \cf0\highlight0   interface  IGMP snooping interface information\cf1\highlight2 
+\par \cf0\highlight0   mrouter    Multicast router ports information\cf1\highlight2 
+\par \cf0\highlight0   summary    Displays the number of IGMP enabled snooping instances\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dell-OS10# show ip igmp snooping groups\cf1\highlight2 
+\par \cf0\highlight0 Total Number of Groups: 0\cf1\highlight2 
+\par \cf0\highlight0 IGMP Connected Group Membership\cf1\highlight2 
+\par \cf0\highlight0 Group Address                 Interface           Mode                Expires\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10# show ip igmp snooping summary\cf1\highlight2 
+\par \cf0\highlight0 Maximum number of IGMP and MLD Instances: 1024\cf1\highlight2 
+\par \cf0\highlight0 Total Number of interface with IGMP Snooping enabled is: 2\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10# show ip\cf1\highlight2 
+\par \cf0\highlight0 ip   ipv6\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10# show ip\cf1\highlight2 
+\par \cf0\highlight0   access-group         Show IPv4 access-group information\cf1\highlight2 
+\par \cf0\highlight0   access-lists         Show IPv4 access-list information\cf1\highlight2 
+\par \cf0\highlight0   arp                  show ARP commands\cf1\highlight2 
+\par \cf0\highlight0   as-path-access-list  List AS path access lists\cf1\highlight2 
+\par \cf0\highlight0   bgp                  BGP information\cf1\highlight2 
+\par \cf0\highlight0   community-list       List community-list\cf1\highlight2 
+\par \cf0\highlight0   dhcp                 DHCP information\cf1\highlight2 
+\par \cf0\highlight0   dhcp-relay           Show the information about DHCP relay configuration and options\cf1\highlight2 
+\par \cf0\highlight0   ecmp-group           Show ECMP details\cf1\highlight2 
+\par \cf0\highlight0   extcommunity-list    List extcommunity-list\cf1\highlight2 
+\par \cf0\highlight0   igmp                 IGMP information\cf1\highlight2 
+\par \cf0\highlight0   interface            Show interface information\cf1\highlight2 
+\par \cf0\highlight0   management-route     Management IP route information\cf1\highlight2 
+\par \cf0\highlight0   ospf                 OSPF information\cf1\highlight2 
+\par \cf0\highlight0   pim                  PIM information\cf1\highlight2 
+\par \cf0\highlight0   policy               Policy routing\cf1\highlight2 
+\par \cf0\highlight0   prefix-list          List IP prefix lists\cf1\highlight2 
+\par \cf0\highlight0   route                IP route information\cf1\highlight2 
+\par \cf0\highlight0   rpf                  Reverse path forwarding info\cf1\highlight2 
+\par \cf0\highlight0   ssh                  Show SSH server information\cf1\highlight2 
+\par \cf0\highlight0   vrf                  VRF instance information\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dell-OS10# show ip vrf blue\cf1\highlight2 
+\par \cf0\highlight0 VRF-Name                          Interfaces\cf1\highlight2 
+\par \cf0\highlight0 blue                              Vlan100,200\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10# show ip vrf blue\cf1\highlight2 
+\par \cf0\highlight0   |     Pipe through a command\cf1\highlight2 
+\par \cf0\highlight0   <cr>\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dell-OS10# show ip vrf\cf1\highlight2 
+\par \cf0\highlight0 VRF-Name                          Interfaces\cf1\highlight2 
+\par \cf0\highlight0 blue                              Vlan100,200\cf1\highlight2 
+\par 
+\par \cf0\highlight0 default                           Mgmt1/1/1\cf1\highlight2 
+\par \cf0\highlight0                                   Vlan1\cf1\highlight2 
+\par \cf0\highlight0                                   Loopback0\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10# show in\cf1\highlight2 
+\par \cf0\highlight0 interface inventory\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10# show interface vlan 100\cf1\highlight2 
+\par \cf0\highlight0 Vlan 100 is up, line protocol is down\cf1\highlight2 
+\par \cf0\highlight0 Description: IPerf-Server\cf1\highlight2 
+\par \cf0\highlight0 Address is 0c:f9:0f:55:00:49, Current address is 0c:f9:0f:55:00:49\cf1\highlight2 
+\par \cf0\highlight0 Mac Learning is enabled\cf1\highlight2 
+\par \cf0\highlight0 Interface index is 56\cf1\highlight2 
+\par \cf0\highlight0 Internet address is 172.21.100.1/24\cf1\highlight2 
+\par \cf0\highlight0 Mode of IPv4 Address Assignment: MANUAL\cf1\highlight2 
+\par \cf0\highlight0 Interface IPv6 oper status: Enabled\cf1\highlight2 
+\par \cf0\highlight0 MTU 9216 bytes, IP MTU 9184 bytes\cf1\highlight2 
+\par \cf0\highlight0 LineSpeed 0\cf1\highlight2 
+\par \cf0\highlight0 ARP type: ARPA, ARP Timeout: 60\cf1\highlight2 
+\par \cf0\highlight0 Last clearing of "show interface" counters: 00:09:44\cf1\highlight2 
+\par \cf0\highlight0 Queuing strategy: fifo\cf1\highlight2 
+\par \cf0\highlight0 Input statistics:\cf1\highlight2 
+\par \cf0\highlight0     0 packets, 0 octets\cf1\highlight2 
+\par \cf0\highlight0 Output statistics:\cf1\highlight2 
+\par \cf0\highlight0     0 packets, 0 octets\cf1\highlight2 
+\par \cf0\highlight0 Time since last interface status change: 00:09:44\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10# show running interface vlan 100\cf1\highlight2 
+\par \cf0\highlight0 % Error: Unrecognized command.\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10# show running-configuration interface vlan 100\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface vlan100\cf1\highlight2 
+\par \cf0\highlight0  description IPerf-Server\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  ip vrf forwarding blue\cf1\highlight2 
+\par \cf0\highlight0  ip address 172.21.100.1/24\cf1\highlight2 
+\par \cf0\highlight0  ip pim sparse-mode\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10# show running-configuration interface vlan 200\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface vlan200\cf1\highlight2 
+\par \cf0\highlight0  description IPerf-Client\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  ip vrf forwarding blue\cf1\highlight2 
+\par \cf0\highlight0  ip address 172.21.200.1/24\cf1\highlight2 
+\par \cf0\highlight0  ip pim sparse-mode\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10# show running-configuration interface ethernet 1/1/1\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/1\cf1\highlight2 
+\par \cf0\highlight0  description IPerf-Server\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10# show running-configuration interface ethernet 1/1/5\cf1\highlight2 
+\par \cf0\highlight0 !\cf1\highlight2 
+\par \cf0\highlight0 interface ethernet1/1/5\cf1\highlight2 
+\par \cf0\highlight0  description IPerf-Client\cf1\highlight2 
+\par \cf0\highlight0  no shutdown\cf1\highlight2 
+\par \cf0\highlight0  switchport access vlan 1\cf1\highlight2 
+\par \cf0\highlight0  flowcontrol receive on\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \cf0\highlight0 Dell-OS10#\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 
